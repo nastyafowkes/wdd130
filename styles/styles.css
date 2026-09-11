@@ -1,4 +1,5 @@
 /* NAVIGATION */
+/* ===== NAVIGATION ===== */
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -11,11 +12,12 @@ nav a {
     text-decoration: none;
     padding: 10px 20px;
     display: inline-block;
-    /* робить лінки горизонтальними */
+    /* горизонтальні лінки */
     font-size: 18px;
     font-weight: bold;
     border-radius: 4px;
-    /* легке округлення */
+    transition: background-color 0.3s ease;
+    /* плавний ефект */
 }
 
 nav a:hover {
@@ -23,14 +25,29 @@ nav a:hover {
     /* темніший синій при наведенні */
 }
 
-/* HEADER */
-h1 {
-    color: darkblue;
+/* ===== HEADER ===== */
+header {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
     text-align: center;
-    margin-top: 20px;
 }
 
-/* IMAGE */
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* ===== MAIN ===== */
+main {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 8px;
+}
+
+/* ===== IMAGE ===== */
 img {
     width: 150px;
     height: auto;
@@ -42,7 +59,7 @@ img {
     /* центруємо фото */
 }
 
-/* PARAGRAPHS */
+/* ===== PARAGRAPHS ===== */
 p {
     padding: 10px;
     font-size: 18px;
@@ -50,4 +67,13 @@ p {
     max-width: 700px;
     margin: 0 auto;
     /* центруємо текст */
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
 }
