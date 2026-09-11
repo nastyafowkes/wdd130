@@ -1,4 +1,4 @@
-/* NAVIGATION */
+/* ===== NAVIGATION ===== */
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -10,10 +10,10 @@ nav a {
     text-decoration: none;
     padding: 20px;
     display: block;
-    /* REQUIRED BY AUDIT */
+    /* REQUIRED */
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 header {
     background-color: darkblue;
     color: white;
@@ -21,17 +21,20 @@ header {
     text-align: center;
 }
 
-/* MAIN */
+header h1 {
+    color: white;
+}
+
+/* ===== MAIN ===== */
 main {
-    background-color: white;
-    padding: 20px;
     max-width: 900px;
     /* REQUIRED */
     margin: 20px auto;
-    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
 }
 
-/* MAIN IMAGE (REQUIRED BY AUDIT) */
+/* ===== MAIN IMAGE (REQUIRED) ===== */
 main img {
     width: 150px;
     height: auto;
@@ -40,25 +43,38 @@ main img {
     box-shadow: 0 0 30px gray;
 }
 
-/* ASIDE (REQUIRED BY AUDIT) */
+/* ===== ASIDE (REQUIRED) ===== */
 aside {
     width: 200px;
     margin: 20px auto;
+    border: 1px solid #ccc;
     padding: 10px;
     background-color: #eee;
+    color: #333;
     text-align: center;
 }
 
 aside img {
     width: 200px;
+    /* REQUIRED */
     height: auto;
 }
 
-/* FOOTER */
+/* ===== PARAGRAPHS ===== */
+p {
+    padding: 0;
+    /* REQUIRED */
+}
+
+/* ===== FOOTER ===== */
 footer {
+    margin-top: 20px;
+    /* REQUIRED */
+    border-top: 1px solid #ccc;
+    /* REQUIRED */
+    text-align: center;
+    /* REQUIRED */
     background-color: darkblue;
     color: white;
-    text-align: center;
     padding: 15px;
-    margin-top: 20px;
 }
