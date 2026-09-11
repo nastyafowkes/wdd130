@@ -1,31 +1,19 @@
 /* NAVIGATION */
-/* ===== NAVIGATION ===== */
 nav {
     background-color: darkblue;
     padding: 10px;
     text-align: center;
-    /* центруємо лінки */
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-    /* горизонтальні лінки */
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-    /* плавний ефект */
+    padding: 20px;
+    display: block;
+    /* REQUIRED BY AUDIT */
 }
 
-nav a:hover {
-    background-color: #002b80;
-    /* темніший синій при наведенні */
-}
-
-/* ===== HEADER ===== */
+/* HEADER */
 header {
     background-color: darkblue;
     color: white;
@@ -33,43 +21,40 @@ header {
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 32px;
-}
-
-/* ===== MAIN ===== */
+/* MAIN */
 main {
     background-color: white;
     padding: 20px;
-    margin: 20px auto;
     max-width: 900px;
+    /* REQUIRED */
+    margin: 20px auto;
     border-radius: 8px;
 }
 
-/* ===== IMAGE ===== */
-img {
+/* MAIN IMAGE (REQUIRED BY AUDIT) */
+main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-    display: block;
+}
+
+/* ASIDE (REQUIRED BY AUDIT) */
+aside {
+    width: 200px;
     margin: 20px auto;
-    /* центруємо фото */
-}
-
-/* ===== PARAGRAPHS ===== */
-p {
     padding: 10px;
-    font-size: 18px;
-    line-height: 1.5;
-    max-width: 700px;
-    margin: 0 auto;
-    /* центруємо текст */
+    background-color: #eee;
+    text-align: center;
 }
 
-/* ===== FOOTER ===== */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* FOOTER */
 footer {
     background-color: darkblue;
     color: white;
