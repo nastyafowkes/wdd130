@@ -6,62 +6,92 @@
     <title>White Water Rafting Co. | Trips</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore our rafting trips and choose your next adventure.">
-    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="author" content="Anastasia Fowkes">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
-        <img class="logo" src="images/logo-new.svg"alt="Rafting Company Logo">
+        <img class="logo" src="images/logo-new.svg" alt="Rafting Company Logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html" class="active">Trips</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <img src="images/hero-trips.jpg" alt="Rafting trip on the river">
-        <h1>Our Trips</h1>
-    </section>
-
     <main>
 
-        <section class="box">
+        <!-- HERO (correct placement inside <main>) -->
+        <div class="hero">
+            <img src="images/hero-trips.jpg" alt="Rafting trip on the river">
+
+            <h1>White Water Rafting Co.</h1>
+
+            <article>
+                <img src="images/rafting1.jpg" alt="Rafting group paddling through rapids">
+                <p>Choose from a variety of rafting adventures designed for every skill level.</p>
+            </article>
+        </div>
+
+        <!-- SECTION 1 -->
+        <section>
             <h2>Choose Your Adventure</h2>
-            <p>We offer a variety of rafting experiences for all skill levels. Pick the trip that fits your style!</p>
+            <p>
+                We offer a variety of rafting experiences for all skill levels.
+                Pick the trip that fits your style and get ready for an unforgettable adventure!
+            </p>
         </section>
 
-        <section class="trip-cards">
+        <!-- SECTION 2 -->
+        <section>
+            <h2>Our Trips</h2>
 
-            <div class="trip-card">
-                <img src="images/trip1.jpg" alt="Beginner rafting trip">
-                <h3>Beginner Rapids</h3>
-                <p>Perfect for families and first‑timers. Calm waters with light splashes.</p>
-                <a class="btn" href="contact.html">Book Now</a>
+            <div class="trip-cards">
+
+                <div class="trip-card">
+                    <img src="images/trip1.jpg" alt="Beginner rafting trip">
+                    <h3>Beginner Rapids</h3>
+                    <p>Perfect for families and first‑timers. Calm waters with light splashes.</p>
+                    <a class="btn" href="contact.html">Book Now</a>
+                </div>
+
+                <div class="trip-card">
+                    <img src="images/trip2.jpg" alt="Intermediate rafting trip">
+                    <h3>Intermediate Adventure</h3>
+                    <p>A balanced mix of excitement and safety. Great for active groups.</p>
+                    <a class="btn" href="contact.html">Book Now</a>
+                </div>
+
+                <div class="trip-card">
+                    <img src="images/trip3.jpg" alt="Advanced rafting trip">
+                    <h3>Extreme Rapids</h3>
+                    <p>High‑intensity rapids for experienced rafters seeking adrenaline.</p>
+                    <a class="btn" href="contact.html">Book Now</a>
+                </div>
+
             </div>
-
-            <div class="trip-card">
-                <img src="images/trip2.jpg" alt="Intermediate rafting trip">
-                <h3>Intermediate Adventure</h3>
-                <p>A balanced mix of excitement and safety. Great for active groups.</p>
-                <a class="btn" href="contact.html">Book Now</a>
-            </div>
-
-            <div class="trip-card">
-                <img src="images/trip3.jpg" alt="Advanced rafting trip">
-                <h3>Extreme Rapids</h3>
-                <p>High‑intensity rapids for experienced rafters seeking adrenaline.</p>
-                <a class="btn" href="contact.html">Book Now</a>
-            </div>
-
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 White Water Rafting Co. | Created by Anastasia Fowkes</p>
+        <p>© 2026 White Water Rafting Co. | Created by Anastasia Fowkes</p>
+
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram icon">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="Twitter icon">
+            </a>
+        </nav>
     </footer>
 
 </body>
