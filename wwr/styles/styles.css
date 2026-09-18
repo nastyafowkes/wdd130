@@ -1,0 +1,196 @@
+/* ===========================
+   RESET
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f8f8f8;
+}
+
+/* ===========================
+   HEADER + NAV
+=========================== */
+header {
+    background-color: #004b6b;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    height: 60px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    text-decoration: underline;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 3rem;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* ===========================
+   MAIN CONTENT
+=========================== */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.box {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===========================
+   TEAM SECTION
+=========================== */
+.team-images,
+.adventure-gallery {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.team-images img,
+.adventure-gallery img {
+    width: 32%;
+    border-radius: 8px;
+}
+
+/* ===========================
+   TRIPS PAGE
+=========================== */
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.trip-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.trip-card h3 {
+    padding: 1rem;
+}
+
+.trip-card p {
+    padding: 0 1rem 1rem;
+}
+
+.trip-card .btn {
+    display: block;
+    background: #004b6b;
+    color: white;
+    text-align: center;
+    padding: 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.trip-card .btn:hover {
+    background: #006a96;
+}
+
+/* ===========================
+   CONTACT PAGE
+=========================== */
+.contact-info {
+    display: flex;
+    gap: 2rem;
+}
+
+.contact-info div {
+    flex: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input,
+form textarea {
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background: #004b6b;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background: #006a96;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+    background: #004b6b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}

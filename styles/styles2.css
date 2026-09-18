@@ -1,0 +1,199 @@
+/* =========================================================
+   RESET
+   ========================================================= */
+
+/* CHANGE: BYU-I Code-along requires this universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header {
+    background: #eee;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    margin-right: 1.5rem;
+    text-decoration: none;
+    color: #0055aa;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+   ========================================================= */
+
+main {
+    display: flex;
+    gap: 2rem;
+}
+
+
+/* =========================================================
+   ASIDE
+   ========================================================= */
+
+/*
+   CHANGE:
+   position: relative is REQUIRED for the Poland overlay.
+
+   This makes the aside the positioning container
+   for the h2.location element.
+*/
+aside {
+    position: relative;
+
+    /* CHANGE:
+       Gives the aside a controlled width like the BYU-I example.
+    */
+    width: 20em;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   PROFILE IMAGE
+   ========================================================= */
+
+/*
+   CHANGE:
+   float: right is REQUIRED by the BYU-I Code-along.
+
+   This puts the photo on the right and allows the
+   paragraph text to flow around the image.
+*/
+.profile {
+    float: right;
+
+    width: 200px;
+
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   POLAND OVERLAY
+   ========================================================= */
+
+/*
+   CHANGE:
+   This is the important part.
+
+   position: absolute makes "Poland" sit on top
+   of the image.
+
+   Because aside has position: relative,
+   this h2 is positioned relative to the aside.
+*/
+.location {
+    position: absolute;
+
+    /*
+       CHANGE:
+       We use left instead of right.
+
+       BYU-I's Code-along uses top and left
+       for this overlay.
+    */
+    top: 10px;
+    left: 150px;
+
+    background: none;
+
+    color: white;
+    
+    text-shadow: 2px 2px 4px #000;
+
+    padding: 5px 10px;
+
+    font-size: 1.2rem;
+
+    font-weight: bold;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   CLASS SELECTORS
+   ========================================================= */
+
+/*
+   CHANGE:
+   BYU-I specifically asks for a .box class.
+
+   Both aside and ul use class="box".
+*/
+.box {
+    margin: 1rem;
+
+    border: 1px solid #ccc;
+
+    padding: 1rem;
+
+    background: #fff;
+
+    color: #000;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================================================
+   TEMPLE LIST
+   ========================================================= */
+
+ul.box {
+    width: 250px;
+}
+
+ul.box li {
+    margin-bottom: 0.5rem;
+}
+
+ul.box a {
+    color: #0055aa;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    margin-top: 1rem;
+}
