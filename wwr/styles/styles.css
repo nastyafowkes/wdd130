@@ -99,6 +99,8 @@ main {
 .team-images img,
 .adventure-gallery img {
     width: 32%;
+    height: 220px;
+    object-fit: cover;
     border-radius: 8px;
 }
 
