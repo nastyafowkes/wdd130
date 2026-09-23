@@ -1,5 +1,6 @@
 /* ===========================
    CSS VARIABLES
+   ORIGINAL CODE
 =========================== */
 :root {
     --primary-color: #004b6b;
@@ -10,6 +11,7 @@
 
 /* ===========================
    RESET
+   ORIGINAL CODE
 =========================== */
 * {
     margin: 0;
@@ -26,35 +28,69 @@ body {
 
 /* ===========================
    HEADER + NAV
+   CHANGED FROM ORIGINAL
 =========================== */
+
+/* ORIGINAL:
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+CHANGED:
+The assignment requires CSS Grid for the header.
+*/
 header {
     background-color: var(--primary-color);
     color: white;
     padding: 1rem;
-    display: flex;
+
+    /* CHANGED: Header now uses CSS Grid instead of Flexbox. */
+    display: grid;
+
+    /* CHANGED: Logo and navigation are placed in two columns. */
+    grid-template-columns: auto 1fr;
+
     align-items: center;
-    justify-content: space-between;
 }
 
 header .logo {
     height: 60px;
 }
 
-nav a {
+/* CHANGED:
+The navigation now uses Flexbox as required by the assignment.
+*/
+header nav {
+    display: flex;
+
+    /* CHANGED: Places the navigation links horizontally on the right. */
+    justify-content: flex-end;
+
+    /* CHANGED: Creates space between navigation links. */
+    gap: 1.5rem;
+}
+
+header nav a {
     color: white;
     text-decoration: none;
-    margin-left: 1.5rem;
+
+    /* CHANGED: Margin-left from the original was removed
+       because gap is now used by Flexbox. */
     font-weight: bold;
 }
 
-nav a:hover,
-nav a.active {
+header nav a:hover,
+header nav a.active {
     text-decoration: underline;
 }
 
 /* ===========================
    HERO SECTION
+   ORIGINAL CODE
 =========================== */
+
 .hero {
     position: relative;
     width: 100%;
@@ -62,7 +98,7 @@ nav a.active {
     overflow: hidden;
 }
 
-.hero img {
+.hero>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -79,12 +115,11 @@ nav a.active {
     border-radius: 5px;
 }
 
-/* HERO ARTICLE (required for audit) */
 .hero article {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     padding: 1rem;
     border-radius: 8px;
     width: 300px;
@@ -102,24 +137,116 @@ nav a.active {
 
 /* ===========================
    MAIN CONTENT
+   ORIGINAL CODE
 =========================== */
+
 main {
     max-width: 1100px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
-.box {
-    background: white;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* ===========================
+   HISTORY SECTION
+   CHANGED FROM ORIGINAL
+=========================== */
+
+/* ORIGINAL:
+There was no .history layout.
+
+CHANGED:
+The History section now uses CSS Grid to arrange
+the heading, image, and text according to the assignment.
+*/
+.history {
+    display: grid;
+
+    /* CHANGED: Two columns are created for the image and text. */
+    grid-template-columns: 1fr 1fr;
+
+    gap: 2rem;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+/* CHANGED:
+The heading spans both columns.
+*/
+.history h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+/* CHANGED:
+The History image is sized to fit the grid layout.
+*/
+.history img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 
 /* ===========================
-   TEAM & ADVENTURE GALLERY
+   ADVENTURES SECTION
+   CHANGED FROM ORIGINAL
 =========================== */
+
+/* ORIGINAL:
+The original page did not have an .adventures layout.
+
+CHANGED:
+Five figures are arranged horizontally using Flexbox.
+*/
+.adventures {
+    display: flex;
+
+    /* CHANGED: Allows the figures to fit on smaller screens. */
+    flex-wrap: wrap;
+
+    justify-content: center;
+    gap: 1rem;
+    margin: 3rem 0;
+}
+
+/* CHANGED:
+The section heading takes the full width above the images.
+*/
+.adventures h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* CHANGED:
+Each adventure is now a figure containing an image and caption.
+*/
+.adventures figure {
+    flex: 1 1 180px;
+    text-align: center;
+}
+
+/* CHANGED:
+Adventure images are styled to fit evenly in the row.
+*/
+.adventures img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* CHANGED:
+Styles the required figcaption elements.
+*/
+.adventures figcaption {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* ===========================
+   OLD TEAM & ADVENTURE GALLERY
+   ORIGINAL CODE
+=========================== */
+
 .team-images,
 .adventure-gallery {
     display: flex;
@@ -137,7 +264,9 @@ main {
 
 /* ===========================
    TRIPS PAGE
+   ORIGINAL CODE
 =========================== */
+
 .trip-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -181,7 +310,9 @@ main {
 
 /* ===========================
    CONTACT PAGE
+   ORIGINAL CODE
 =========================== */
+
 .contact-info {
     display: flex;
     gap: 2rem;
@@ -219,23 +350,46 @@ form button:hover {
 
 /* ===========================
    FOOTER
+   CHANGED FROM ORIGINAL
 =========================== */
+
+/* ORIGINAL:
+footer {
+    text-align: center;
+}
+
+CHANGED:
+The footer now uses Flexbox so the text stays on the left
+and the social media icons are arranged on the right.
+*/
 footer {
     background: var(--primary-color);
     color: white;
-    text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+
+    /* CHANGED: Footer now uses Flexbox. */
+    display: flex;
+
+    /* CHANGED: Places text on the left and social icons on the right. */
+    justify-content: space-between;
+
+    align-items: center;
 }
 
 /* ===========================
    SOCIAL MEDIA ICONS
+   CHANGED FROM ORIGINAL
 =========================== */
+
 footer nav.socialmedia {
-    margin-top: 1rem;
+    /* CHANGED: Social icons are arranged horizontally. */
     display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+
+    /* CHANGED: Keeps the icons on the right side. */
+    justify-content: flex-end;
+
+    gap: 1rem;
 }
 
 footer nav.socialmedia a {

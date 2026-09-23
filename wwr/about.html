@@ -12,6 +12,8 @@
 
 <body>
 
+    <!-- CHANGED: Header structure remains the same,
+         but CSS Grid is now used to create the horizontal layout. -->
     <header>
         <img class="logo" src="images/logo-new.svg" alt="Rafting Company Logo">
 
@@ -25,7 +27,8 @@
 
     <main>
 
-        <!-- HERO SECTION (correct structure for audit) -->
+        <!-- HERO SECTION
+             This section was kept from the original code. -->
         <div class="hero">
             <img src="images/hero-rafting.jpg" alt="Rafting adventure on the river">
 
@@ -37,9 +40,14 @@
             </article>
         </div>
 
-        <!-- SECTION 1: HISTORY -->
-        <section>
+        <!-- CHANGED: History section now has a class
+             and includes an image so the text and image can be
+             arranged using CSS Grid according to the assignment. -->
+        <section class="history">
             <h2>History</h2>
+
+            <img src="images/rafting2.jpg" alt="Rafting adventure on the river">
+
             <p>
                 Founded in 1998, our company began with a single raft and a passion for the outdoors.
                 Over the years, we have grown into one of the most trusted rafting outfitters in the region,
@@ -47,17 +55,41 @@
             </p>
         </section>
 
-        <!-- SECTION 2: ADVENTURE AWAITS YOU -->
-        <section>
+        <!-- CHANGED: Adventure section now contains five figure elements.
+             Each figure contains an image and a figcaption as required. -->
+        <section class="adventures">
             <h2>Adventure Awaits You!</h2>
-            <p>
-                Whether you are seeking calm waters or extreme rapids, our rafting experiences offer
-                unforgettable memories, breathtaking scenery, and the excitement of conquering the river.
-            </p>
+
+            <figure>
+                <img src="images/rafting1.jpg" alt="Rafting adventure">
+                <figcaption>Big Mallard</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/rafting2.jpg" alt="Rafting through rapids">
+                <figcaption>Half Day Adventure</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/rafting3.jpg" alt="Rafting team">
+                <figcaption>River Run</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/guide1.jpg" alt="Rafting guide">
+                <figcaption>Expert Guides</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/guide2.jpg" alt="Rafting guide on the river">
+                <figcaption>River Adventure</figcaption>
+            </figure>
         </section>
 
     </main>
 
+    <!-- CHANGED: Footer layout is now controlled with CSS Flexbox.
+         The social media icons are placed horizontally on the right. -->
     <footer>
         <p>© 2026 White Water Rafting Co. | Created by Anastasia Fowkes</p>
 
@@ -65,9 +97,11 @@
             <a href="https://facebook.com">
                 <img src="images/facebook.png" alt="Facebook icon">
             </a>
+
             <a href="https://instagram.com">
                 <img src="images/instagram.png" alt="Instagram icon">
             </a>
+
             <a href="https://twitter.com">
                 <img src="images/twitter.png" alt="Twitter icon">
             </a>
