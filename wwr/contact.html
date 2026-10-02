@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -20,6 +21,8 @@
             <a href="contact.html" class="active">Contact Us</a>
         </nav>
     </header>
+
+    ```
     <main>
         <div class="hero">
             <img src="images/hero-contact.jpg" alt="Rafting contact banner">
@@ -29,38 +32,49 @@
                 <p>Reach out to our team for bookings, questions, or adventure details.</p>
             </article>
         </div>
+
         <section>
             <h2>Contact Information</h2>
             <p><strong>Phone:</strong> +1 (208) 555-1234</p>
             <p><strong>Email:</strong> info@raftingco.com</p>
             <p><strong>Address:</strong> 123 River Road, Idaho, USA</p>
+
             <iframe src="https://www.google.com/maps?q=Idaho%2C%20USA&output=embed" width="600" height="300"
-                style="border:0;" allowfullscreen="" loading="lazy"
-                title="Map showing the location of White Water Rafting Co."></iframe>
+                allowfullscreen loading="lazy" title="Map showing the location of White Water Rafting Co.">
+            </iframe>
         </section>
+
         <section>
             <h2>Meet Our Team</h2>
+
             <figure>
                 <img src="images/guide1.jpg" alt="White Water Rafting guide">
                 <figcaption>Alex - Lead Rafting Guide</figcaption>
             </figure>
+
             <figure>
                 <img src="images/guide2.jpg" alt="White Water Rafting guide on the river">
                 <figcaption>Jordan - Adventure Guide</figcaption>
             </figure>
+
             <figure>
                 <img src="images/rafting3.jpg" alt="White Water Rafting team member">
                 <figcaption>Taylor - Customer Experience Guide</figcaption>
             </figure>
         </section>
+
         <section>
             <h2>Send Us a Message</h2>
             <p>Have questions or want to book a trip? Send us a message and we’ll get back to you soon.</p>
+
             <form action="#" method="post">
+
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Your Email" required>
+
                 <label for="purpose">Message Purpose:</label>
                 <select id="purpose" name="purpose" required>
                     <option value="" selected disabled>Select a purpose</option>
@@ -69,22 +83,54 @@
                     <option value="trip">Trip Information</option>
                     <option value="other">Other</option>
                 </select>
+
+                <p>How did you hear about us?</p>
+
+                <label for="social">
+                    <input type="radio" id="social" name="source" value="social">
+                    Social Media
+                </label>
+
+                <label for="friend">
+                    <input type="radio" id="friend" name="source" value="friend">
+                    Friend Recommendation
+                </label>
+
+                <label for="search">
+                    <input type="radio" id="search" name="source" value="search">
+                    Search Engine
+                </label>
+
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                <label for="subscribe"><input type="checkbox" id="subscribe" name="subscribe"> Subscribe to our
-                    newsletter</label>
+
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    Subscribe to our newsletter
+                </label>
+
                 <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
+
     <footer>
         <p>© 2026 White Water Rafting Co. | Created by Anastasia Fowkes</p>
+
         <nav class="socialmedia">
-            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook icon"></a>
-            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram icon"></a>
-            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter icon"></a>
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram icon">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="Twitter icon">
+            </a>
         </nav>
     </footer>
+    ```
+
 </body>
 
-</html>і
+</html>
